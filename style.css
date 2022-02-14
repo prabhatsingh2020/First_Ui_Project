@@ -1,0 +1,574 @@
+/* ------------PRABHAT--------CODE---------------------------------------- */
+*{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    background: url(/static/slider-right-dec.jpg);
+    
+}
+#webpage{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    background-color: #c5d3df
+
+}
+#parentdiv{
+    padding: 1px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 5px 8px 5px rgb(235, 230, 230);
+
+}
+
+#logodiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8px;
+    width:320px
+}
+
+#blankspace{
+    flex-grow: 1;
+}
+
+#parentnav{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.childnav{
+    list-style: none;
+    padding: 15px;
+}
+
+.list{
+    font-size: 20px;
+}
+
+.listanc{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.listanc:hover{
+    color: rgb(247, 77, 77);
+}
+
+#searchbar{
+    display: flex;
+    align-items: center;
+    flex-direction:row-reverse;
+    padding:0px 35px;
+
+}
+
+#input1{
+    font-size: 15px;
+}
+.btn{
+    background-color: white;
+    color: #f93b93;
+    border-radius: 20px;
+    border: 2px solid #f93b93;
+    padding: 7px 10px;
+}
+
+.btn:hover{
+    background-color: rgb(87, 86, 86);
+    color:white;
+    font-size: 15px;
+    padding: 7px 10px;
+}
+#hr{
+    display: none;
+}
+
+
+
+
+
+
+/* ------SHUBHAM-----CODE------------------------------------------------> */
+#main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    /* border: 2px solid black; */
+  }
+  
+  #herosection {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 400px;
+    width: 70%;
+    /* border: 2px solid black; */
+  }
+  
+  #sidesection {
+    margin: 0px 5px 0px 0px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .cmn {
+    margin: 5px;
+  }
+  
+  #heading {
+    order: 1;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    color: orangered;
+    font-weight: bold;
+  }
+  
+  #part1 {
+    order: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+  }
+  
+  #part2 {
+    order: 3;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 13px;
+  }
+  
+  #bt {
+    order: 4;
+    width: 90%;
+    padding: 5px;
+    margin: 5px;
+    /* border: 1px solid black; */
+  }
+  
+  #mre {
+    background: none;
+    border-radius: 50px;
+    height: 30px;
+    width: 50px;
+    color: gold;
+  }
+  
+  #sidesection2 {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  
+  #img {
+    height: 290px;
+    width: 410px;
+  }
+
+
+
+  @media only screen and (min-width:320px) and (max-width:800px) {
+    #main {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 700px;
+    }
+  
+    #herosection {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: 600px;
+      /* edited */
+      width: 100%;
+    }
+  
+    #sidesection {
+      order: 2;
+      margin: 20px 0px 0px 0px;
+      /* edited */
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  
+    .cmn {
+      margin: 5px;
+    }
+  
+    #heading {
+      order: 1;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-size: 13px;
+      color: orangered;
+      font-weight: bold;
+      animation: dazzler 8s ease 2s;
+  
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+  
+    @keyframes dazzler {
+      50% {
+        transform: translateX(-50%);
+      }
+  
+      100% {
+        transform: translateX(50%);
+      }
+    }
+  
+    #part1 {
+      order: 2;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: xx-large;
+      font-weight: bold;
+      color: palevioletred;
+      text-align: center;
+    }
+  
+    #part2 {
+      order: 3;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 13px;
+      text-align: center;
+    }
+  
+    #bt {
+      order: 4;
+      display: flex;
+      justify-content: center;
+    }
+  
+    #mre {
+      background: none;
+      border-radius: 50px;
+      font-size: 20px;
+      height: 30px;
+      width: 70px;
+      color: gold;
+      border: 2px solid green;
+    }
+  
+    #mre:hover {
+      background: orangered;
+      font-size: 15px;
+      height: 30px;
+      width: 70px;
+      color: gold;
+      border: 2px solid green;
+    }
+  
+    #sidesection2 {
+      order: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0px 0px 0px;
+      width: 90%;
+    }
+  
+    #img {
+      height: 290px;
+      /* edited */
+      width: 90%;
+      border: none;
+    }
+  }
+
+
+
+  
+
+
+
+
+/* 3---------Prabhat------------CODE-------------------------------------------> */
+#container1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#container1main1{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+}
+
+#p1{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0px;
+    color:  blue ;
+}
+#h1{
+    font-weight: bold;
+    margin: 5px 0px;
+}
+span{
+    color: blue;
+    font-weight: bold;
+}
+hr{
+    width:40px
+}
+#container1main2{
+    width:68%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+.boxing{
+    box-shadow: 5px 5px 5px 5px rgb(235, 230, 230);
+    width:11%;
+    padding: 10px;
+    transition:all 0.5s ease-in ;
+}
+.boxing:hover{
+    transform: rotate(14400deg);
+}
+#container1child1{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.image{
+    width:53%;
+}
+#input3{
+    height: 20%;
+    width: 50%;
+}
+#container1child2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+#input4{
+    height: 20%;
+    width: 50%;
+
+}
+#container1child3{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-items: center;
+
+}
+#container1child4{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-items: center;
+
+}
+#container1child5{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-items: center;
+
+}
+#input5{
+    height: 20%;
+    width: 50%;
+
+}
+.boldtext{
+    margin:15px 0px 7px 0px ;
+    animation: prabhat 8s ease 2s infinite alternate;
+}
+@keyframes prabhat {
+    50% {
+      transform: translateX(-14%);
+    }
+
+    100% {
+      transform: translateX(14%);
+    }
+  }
+
+#footer{
+    background: url(./static/footer-bg.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+
+}
+#paragraph{
+    font-size: 17px;
+}
+
+
+@media only screen and (min-width: 500px) and (max-width:850px){
+    /* ---------PRABHAT-----CODE------> */
+    *{
+        margin: 0px;
+        padding:0px;
+    }
+    #parentdiv{
+        justify-content: space-around;
+    }
+    #logodiv{
+        width: 100px;
+    }
+    #logo{
+        width: 90%;
+        height: 20px;
+    }
+    #parentnav{
+        display: none;
+    }
+    #blankspace{
+        flex-grow: 0;
+    }
+    #searchbar{
+        padding: 7px 35px;
+    }
+    #input1{
+        font-size: 15px;
+        padding: 4px 10px;
+    }
+    .btn{
+        padding: 2px 2px;
+    }
+    #hr{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    hr{
+        background-color: black;
+        width: 30px;
+        margin: 3px 0px;
+    }
+
+    #container1main2{
+        width: 90%;
+    }
+    .boxing{
+        width:100px;
+    }
+    .boxing{
+        font-size: 14px;
+    }
+    #footer{
+        padding:7px 0px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width:500px){
+    /* ----------PRABHAT------CODE---> */
+    *{
+        margin: 0px;
+        padding:0px;
+        box-sizing: border-box;
+    }
+    #parentdiv{
+        justify-content: space-around;
+    }
+    #logodiv{
+        width: 100px;
+    }
+    #logo{
+        width: 90%;
+        height: 20px;
+    }
+    #parentnav{
+        display: none;
+    }
+    #blankspace{
+        flex-grow: 0;
+    }
+    #searchbar{
+        padding: 7px 35px;
+    }
+    #input1{
+        font-size: 15px;
+        padding: 4px 10px;
+    }
+    .btn{
+        padding: 2px 2px;
+    }
+    #hr{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    hr{
+        background-color: black;
+        width: 30px;
+        margin: 3px 0px;
+    }
+    #h1{
+        text-align: center;
+    }
+    
+    #container1main2{
+        height: 300px;
+        width: 95%;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    .boxing{
+        font-size: 14px;
+        width:100px;
+        height: 120px;
+    }
+
+    #footer{
+        padding:7px 0px;
+    }
+    #paragraph{
+        font-size: 1rem;
+    }
+}
