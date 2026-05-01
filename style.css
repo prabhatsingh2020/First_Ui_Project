@@ -12,6 +12,7 @@ body{
 }
 #webpage{
     position: sticky;
+    color: #c5d3df;
     top: 1px;
     width: 100%;
     background-color: #c5d3df
